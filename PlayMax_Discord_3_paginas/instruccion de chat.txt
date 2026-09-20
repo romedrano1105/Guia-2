@@ -1,0 +1,35 @@
+Instruccion de chat
+Actúa como un Desarrollador Web Senior y Diseñador UI/UX experto. Tu objetivo es crear el código completo (HTML, CSS y JS si es necesario) para un sitio web de 3 páginas, basándote en un estilo específico, una temática definida y un contenido base que te proporcionaré. 
+ 
+Aquí están mis variables de entrada: 
+- TEMÁTICA/URL DEL SITIO: www.playmax.sv    
+- ESTILO DESEADO: [Inserta aquí el estilo. Ej: Minimalista, Cyberpunk, Corporativo elegante, Neumorfismo, etc.] 
+- CONTENIDO/DISEÑO BASE: [Inserta aquí los textos, secciones o ideas que quieres que incluya el diseño] 
+ 
+ESTRUCTURA DEL PROYECTO (3 PÁGINAS): 
+Debes generar el código para 3 páginas distintas que mantengan una navegación funcional entre sí mediante un menú de navegación (navbar) global. 
+1. index.html (Página Principal/Inicio): Debe presentar el atractivo principal del sitio, un banner tipo "Hero" llamativo, y un resumen visual del sitio adaptado al ESTILO DESEADO. 
+2. servicios.html (o productos/institucional): Una página dedicada a mostrar el detalle de lo que ofrece el sitio. Debe contener tarjetas (cards) o una cuadrícula (grid) estructurada basándose en el CONTENIDO BASE. 
+3. contacto.html: Una página de contacto con información relevante y un formulario de contacto funcional a nivel visual (campos de nombre, email, asunto, mensaje y botón de envío). 
+ 
+INSTRUCCIONES DE DISEÑO Y CONTENIDO: 
+- Adapta todo el CONTENIDO BASE que te di al ESTILO DESEADO. Si el texto es muy breve, expándelo sutilmente para que el diseño luzca profesional. 
+- Consistencia: Las 3 páginas deben compartir el mismo archivo CSS (o variables de estilo) para mantener la coherencia en colores, tipografías y espaciados. 
+- Responsive Design: Todo el sitio debe verse perfecto en dispositivos móviles, tablets y escritorio (usa Flexbox o CSS Grid). 
+ 
+INSTRUCCIONES DE ANIMACIÓN E INTERACTIVIDAD (OBLIGATORIO): 
+El sitio debe sentirse vivo y dinámico. Debes implementar estrictamente lo siguiente usando CSS (y JS ligero si es estrictamente necesario para el scroll): 
+1. Efectos Hover (Al pasar el cursor): Cambios de color suaves en botones y enlaces, y un efecto de escalado (transform: scale) o rotación ligera en las tarjetas de la página de servicios/productos. 
+2. Transiciones de Carga: Un efecto de aparición (fade-in) o desplazamiento desde abajo (slide-up) cuando los elementos principales cargan en pantalla. 
+3. Animaciones de Menú: El menú de navegación debe tener un indicador animado al pasar el cursor (ej. subrayado que se expande). 
+4. Suavidad: Todas las animaciones deben usar `transition: all 0.3s ease-in-out` (o duraciones similares) para que no sean bruscas. 
+ 
+ENTREGABLE ESPERADO: 
+Por favor, entrégame el código organizado de la siguiente manera: 
+1. El código HTML completo para `index.html`. 
+2. El código HTML completo para `servicios.html`. 
+3. El código HTML completo para `contacto.html`. 
+4. El código CSS global (`styles.css`) que incluye todas las reglas de diseño, adaptaciones al estilo y animaciones solicitadas. 
+ 
+ 
+No omitas partes del código por brevedad; necesito el código completo y listo para copiar, pegar y funcionar. aun no hagas nada te dare el estilo q necesito que apliques  

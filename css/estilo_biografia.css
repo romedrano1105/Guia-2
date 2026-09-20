@@ -1,0 +1,196 @@
+:root {
+    --color-fondo: #faf9f7;
+    --color-superficie: #ffffff;
+    --color-superficie-alt: #f3f2f0;
+    --color-dorado: #b1604a; 
+    --color-texto: #1f2227;
+    --color-texto-tenue: #6b6f75;
+    --color-borde: rgba(0, 0, 0, 0.08);
+    --color-header-fondo: #ffffff; 
+    --color-header-texto: #1f2227;
+    --color-header-borde: rgba(0, 0, 0, 0.05); 
+    --color-boton-fondo: #b1604a; 
+    --color-boton-hover: #964f3c; 
+    --color-boton-texto: #ffffff; 
+    --fuente-titulos: 'Playfair Display', Georgia, "Times New Roman", serif;
+    --fuente-texto: 'Montserrat', "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    line-height: 1.75;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 86%;
+    max-width: 860px;
+}
+
+header {
+    padding: 120px 20px 70px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+header h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 3.4rem;
+    letter-spacing: 2px;
+    color: var(--color-dorado);
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-family: var(--fuente-titulos);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--color-texto-tenue);
+}
+
+nav {
+    background-color: var(--color-superficie);
+    border-bottom: 1px solid var(--color-borde);
+    padding: 22px 0;
+}
+
+nav .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #b1604a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    padding: 12px 22px;
+    border: 1px solid var(--color-borde);
+    border-radius: 999px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    color: var(--color-dorado);
+    border-color: rgba(209, 169, 84, 0.8);
+    background: rgba(5, 7, 10, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(209, 169, 84, 0.12);
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--color-dorado);
+    outline-offset: 2px;
+}
+
+nav a:active {
+    color: var(--color-fondo);
+    background: var(--color-dorado);
+    transform: translateY(0);
+}
+
+main {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.bloque {
+    background-color: var(--color-superficie);
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.45);
+    border: 1px solid var(--color-borde);
+}
+
+h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+    color: var(--color-dorado);
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 14px;
+    margin-bottom: 26px;
+}
+
+.contenido-flex {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto p {
+    color: var(--color-texto-tenue);
+    font-size: 0.95rem;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.texto p:first-child::first-letter {
+    color: var(--color-dorado);
+    font-family: var(--fuente-titulos);
+    font-size: 2.2rem;
+}
+
+ul {
+    border-top: 1px solid var(--color-borde);
+    list-style-type: none;
+}
+
+ul > li {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--color-borde);
+    color: var(--color-texto-tenue);
+    font-size: 0.95rem;
+}
+
+ul > li:nth-child(odd) {
+    background-color: var(--color-superficie);
+}
+
+ul > li:nth-child(even) {
+    background-color: var(--color-superficie-alt);
+}
+
+ul > li:hover {
+    border-left: 3px solid var(--color-dorado);
+}
+
+ul > li strong {
+    color: var(--color-texto);
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.imagen {
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+
+.imagen:hover {
+    transform: scale(1.05); 
+}
