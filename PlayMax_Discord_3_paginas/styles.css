@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* 💗 Acento Principal (Fucsia vibrante de PlayMax) */
   --color-blurple: #e6007e;         
   --color-dark-blurple: #c2006a;    
   --color-hover-blurple: #f53198;   
@@ -11,7 +10,6 @@
   --color-spring-green: #25d366;    
   --color-ekko-red: #de2761;        
 
-  /* 💜 Fondos y Textos (Estilo Morado PlayMax) */
   --color-void: #170724;            
   --color-snow: #ffffff;            
   --color-not-quite-black: #2b0b3f; 
@@ -20,7 +18,6 @@
   --color-greyple: #a685c2;         
   --color-dim-grey: #6b3f94;        
 
-  /* 🌌 Superficies Especiales */
   --surface-cosmic-page: #1f0933;   
   --surface-feature-blue: #2a1758;  
   --surface-feature-purple: #51247a;
@@ -44,7 +41,7 @@
   --radius-button: 12px;
   --radius-feature: 24px;
 
-  --transition: all .3s ease-in-out;
+  --transition: all 1s ease-in-out;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

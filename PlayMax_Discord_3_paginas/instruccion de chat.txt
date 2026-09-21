@@ -1,5 +1,6 @@
 Instruccion de chat
-Actúa como un Desarrollador Web Senior y Diseñador UI/UX experto. Tu objetivo es crear el código completo (HTML, CSS y JS si es necesario) para un sitio web de 3 páginas, basándote en un estilo específico, una temática definida y un contenido base que te proporcionaré. 
+Actúa como un Desarrollador Web Senior y Diseñador UI/UX experto. Tu objetivo es crear el código completo (HTML, CSS y JS si es necesario) para un sitio web de 3 páginas,
+basándote en un estilo específico, una temática definida y un contenido base que te proporcionaré. 
  
 Aquí están mis variables de entrada: 
 - TEMÁTICA/URL DEL SITIO: www.playmax.sv    
