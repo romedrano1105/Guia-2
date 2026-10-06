@@ -30,7 +30,6 @@ Debes mantener intacta la arquitectura de la información y los textos clave de 
 * **Footer:** Mantener todos los enlaces, horarios, correos (`info@playmax.sv`) y derechos de autor.
 
 
-
 **C. Identidad Visual (Estricto)**
 El diseño debe reflejar los colores y el estilo visual presentes en el material promocional y la hoja de estilos original.
 

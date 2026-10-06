@@ -4,50 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
+    <!-- Importando la fuente Poppins de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --primary-color: #4361ee;
+            --primary-hover: #3a0ca3;
+            --bg-gradient-1: #e0c3fc;
+            --bg-gradient-2: #8ec5fc;
+            --text-main: #2b2d42;
+            --text-muted: #6c757d;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
-            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            /* Fondo con degradado moderno */
+            background: linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         header {
-            background-color: #333;
-            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         header h1 {
             margin: 0;
-            color: white;
+            color: var(--text-main);
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            font-weight: 600;
         }
 
         main {
-            padding: 60px 20px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
         }
 
+        main h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        main p {
+            color: var(--text-muted);
+            margin-bottom: 35px;
+            font-size: 1.1rem;
+        }
+
+        /* Uso de CSS Grid para alinear los botones perfectamente */
         .botones {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 15px;
-            margin-top: 30px;
         }
 
         .boton {
-            display: inline-block;
-            padding: 15px 25px;
-            background-color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            background-color: var(--primary-color);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(67, 97, 238, 0.2);
         }
 
+        /* Efectos interactivos (Hover) */
         .boton:hover {
-            background-color: #222;
+            background-color: var(--primary-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(67, 97, 238, 0.35);
+        }
+
+        .boton:active {
+            transform: translateY(0);
+        }
+
+        /* Adaptabilidad para teléfonos móviles */
+        @media (max-width: 600px) {
+            main {
+                padding: 25px 20px;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
@@ -58,8 +118,8 @@
     </header>
 
     <main>
-        <h2>Bienvenido</h2>
-        <p>Selecciona una opción para continuar:</p>
+        <h2>¡Bienvenido!</h2>
+        <p>Selecciona una opción del menú para continuar a los ejercicios:</p>
 
         <div class="botones">
             <a class="boton" href="htmls guia 1/estilos_embebidos.html">Ejercicio1</a>
