@@ -1,0 +1,390 @@
+:root { 
+  --color-texto: #342e29; 
+  --color-fondo: #f5efe6; 
+  --color-principal: #293e36; 
+  --color-acento: #93472f; 
+  --color-superficie: #ffffff; 
+  --color-contraste: #ead1ad; 
+  --color-borde: #ded3c4; 
+  --color-fondo-secundario: #eadfce; 
+  --color-capa-inicial: rgba(25, 35, 29, 0.85); 
+  --color-capa-final: rgba(25, 35, 29, 0.65); 
+  --color-sombra: rgba(52, 46, 41, 0.10); 
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+contenedor { 
+width: 90%; 
+max-width: 1140px; 
+margin: 0 auto;
+}
+
+img { 
+max-width: 100%; 
+}  
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h2, h3 {
+  color: var(--color-principal);
+}
+
+a {
+  color: var(--color-acento);
+}
+
+a:hover, a:focus-visible {
+  color: var(--color-principal);
+}
+
+.encabezado-principal { 
+color: var(--color-superficie); 
+background-color: var(--color-principal); 
+} 
+.marca { 
+color: var(--color-superficie); 
+font-size: 1.15rem; 
+font-weight: bold; 
+text-decoration: none; 
+}
+
+
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  padding-block: 1rem; 
+}
+
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover, 
+.menu a:focus-visible {
+  color: var(--color-contraste);
+}
+
+.presentacion { 
+  padding: 4rem 0; 
+  color: var(--color-superficie); 
+  background-color: var(--color-principal); 
+  background-image: 
+  linear-gradient( 
+  to right, 
+  var(--color-capa-inicial), 
+  var(--color-capa-final) 
+  ), 
+  url("../images/gran-muralla-china.jpg");  
+  background-size: cover; 
+  background-position: center; 
+} 
+
+/* Instrucción 13: Contenido de presentación */
+.presentacion h1 {
+  max-width: 760px;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.presentacion p {
+  max-width: 640px;
+}
+
+.sobretitulo {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-acento);
+}
+
+.presentacion .sobretitulo {
+  color: var(--color-contraste);
+}
+
+
+.boton-principal {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  background-color: var(--color-acento);
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+.boton-principal:hover, 
+.boton-principal:focus-visible {
+  color: var(--color-principal);
+  background-color: var(--color-contraste);
+}
+
+
+.seccion-maravillas {
+  padding-block: 3rem; 
+}
+
+.titulo-seccion {
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.titulo-seccion h2 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+}
+
+
+.maravillas {
+  display: flex;
+}
+
+/* a) Intenta formar una sola fila. */
+/* b) Se comprimen drásticamente para encajar en el contenedor. */
+/* c) No, el texto se aplasta y pierde legibilidad. */
+
+
+.maravillas {
+  display: flex;
+  flex-wrap: wrap; }
+
+.maravilla {
+  flex: 1 1 300px; 
+}
+
+.maravillas {
+  gap: 1.5rem; 
+  
+  justify-content: center;
+}
+
+/* 
+Respuestas 20:
+a) Crece más porque está sola en la fila y absorbe el espacio sobrante.
+b) El valor flex-grow: 1 (de flex: 1 1 300px).
+c) No, visualmente queda desproporcionada respecto a las demás.
+*/
+
+.maravilla {
+  max-width: 360px; 
+  
+ 
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px var(--color-sombra);
+  
+  overflow: hidden; 
+  /* Explicación 22: Recorta cualquier contenido interno (como la imagen) que sobresalga de la caja, forzándolo a respetar el borde redondeado del contenedor.*/
+  }
+
+maravilla img { 
+display: block; 
+width: 100%; 
+height: 220px; 
+} 
+
+
+.maravilla img {
+  display: block; 
+  width: 100%; 
+  height: 220px; 
+}
+
+/* 
+a) No, al forzar ambas dimensiones (width y height) las imágenes no mantienen su proporción y se deforman.
+b) La fotografía vertical  sufre una distorsión mucho más extrema, viéndose aplastada verticalmente y estirada horizontalmente en comparación con las horizontales. 
+*/
+
+.maravilla img {
+  object-fit: cover;
+  /* 
+  Al utilizar "cover", se pueden perder los bordes o extremos de la imagen que sobresalgan de la proporción de la caja, ya que la imagen se escala para llenar completamente el área del contenedor sin deformarse, recortando el exceso. 
+  */
+}
+
+
+.maravilla-contenido {
+  padding: 1.25rem;
+}
+
+.ubicacion {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--color-acento);
+}
+
+.maravilla-contenido h3 {
+  font-size: 1.35rem;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.maravilla-contenido a {
+  font-weight: bold;
+}
+
+.maravilla {
+  display: flex;
+  flex-direction: column;
+}
+
+.maravilla-contenido {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.maravilla-contenido a {
+  margin-top: auto;
+  align-self: flex-start;
+  /* 
+   El margen automático (margin-top: auto) absorbe todo el espacio vertical disponible que queda libre en el contenedor por encima del enlace, empujando así al enlace hacia la parte más baja de la tarjeta de manera uniforme. 
+  */
+}
+
+/* 
+
+27. a) ¿En qué dirección se desplazó la tarjeta? 
+- Hacia la derecha y hacia abajo.
+27. b) ¿Desde qué posición se calcula el desplazamiento? 
+- Desde su posición original natural dentro del flujo del documento.
+27. c) ¿Las demás tarjetas ocuparon su posición original? 
+- No, el espacio original sigue quedando reservado y vacío.
+27. d) ¿La tarjeta desplazada puede superponerse con otras? 
+- Sí, al estar posicionada puede superponerse a otros elementos (controlado por z-index).
+
+28. a) ¿La tarjeta se desplaza hacia la derecha o hacia la izquierda? 
+- Hacia la izquierda.
+28. b) ¿Por qué una coordenada situada en un lado puede producir movimiento en la dirección contraria? 
+- Porque la propiedad actúa como un separador; al indicarle una distancia desde el borde derecho ("right"), empuja al elemento hacia el lado opuesto (izquierdo).
+
+29. a) ¿Qué ocurrió con las demás tarjetas? 
+- Se reacomodaron ocupando el espacio, como si la tarjeta con posición absoluta ya no existiera.
+29. b) ¿Continúa reservado el espacio original de Petra? 
+ No, al usar posicionamiento absoluto se sale del flujo normal y pierde su espacio reservado.
+29. c) ¿Respecto de qué área parecen calcularse top y left? 
+- Respecto a los límites iniciales del documento o la ventana del navegador.
+
+30. a) ¿Desde dónde se calculan ahora top y left? 
+ Desde los bordes de su contenedor padre (.maravillas).
+30. b) ¿Por qué se modificó la referencia si el contenedor no fue desplazado? 
+- Porque al agregar "position: relative" a .maravillas, este se convirtió en el antecesor posicionado más cercano, estableciendo un nuevo sistema de coordenadas independientemente de si se movió o no.
+
+31. a) ¿Cuál de los dos tipos de posicionamiento conserva el espacio original del elemento? 
+- El posicionamiento relativo (position: relative).
+31. b) ¿Cuál permite que las demás cajas ocupen ese espacio? 
+ El posicionamiento absoluto (position: absolute).
+31. c) ¿Cómo se determina el sistema de referencia de un elemento absoluto? 
+ Busca a su antecesor posicionado más cercano. Si no existe ninguno, se basa en el bloque contenedor inicial o área del documento.
+*/
+
+.maravilla-imagen {
+  position: relative;
+}
+
+.continente {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  
+  z-index: 1;
+  padding: 0.25rem 0.75rem;
+  color: var(--color-superficie);
+  background-color: var(--color-acento);
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.encabezado-principal {
+  position: sticky;
+  top: 0;
+  
+  /* 
+   a) ¿Permanece adherido el encabezado? 
+  Antes de aplicar la instrucción 36, no e queda adherido.
+   b) ¿Qué información falta para indicar el punto de adhesión? 
+   Faltaba indicar una coordenada de anclaje (como top: 0;) para establecer en qué punto de la pantalla debe comenzar a fijarse. 
+  */
+}
+
+.encabezado-principal {
+  position: sticky;
+  top: 0;
+  z-index: 10; 
+  
+  /* 
+   37. El encabezado necesita un valor de z-index superior (10) al utilizado en las etiquetas flotantes de continente (que tienen z-index: 1). Esto asegura que al hacer scroll hacia abajo, el menú de navegación pase por encima de las tarjetas y sus etiquetas, en lugar de quedar oculto detrás de ellas[cite: 3].
+  */
+}
+
+.volver-arriba {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  
+  /* 
+   38. 
+   a) El encabezado con "position: sticky" conserva su espacio original en el flujo normal del documento[cite: 4].
+   
+   b) El botón ".volver-arriba" con "position: fixed", ya que su posición se ancla directamente al área visible del navegador (viewport) desde el momento en que carga la página[cite: 4].
+  */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--color-superficie);
+  background-color: var(--color-acento);
+  border: 2px solid var(--color-superficie);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.seccion-historia {
+  padding-block: 3rem; 
+  background-color: var(--color-fondo-secundario);
+}
+
+.historia-contenido {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 2rem; 
+  align-items: center; 
+}
+
+.historia-contenido > * {
+  flex: 1 1 300px;
+}
+
+.pie-pagina {
+  padding: 2rem 0 5rem; 
+  color: var(--color-superficie); 
+  background-color: var(--color-principal); 
+}

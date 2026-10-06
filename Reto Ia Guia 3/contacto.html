@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayMax | Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar container">
+    <a class="logo" href="index.html">
+      <span class="logo-main">play<span>max</span></span>
+      <small>DIVERSIÓN EXTREMA</small>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Atracciones</a></li>
+      <li><a href="servicios.html#cumpleanos">Cumpleaños</a></li>
+      <li><a href="servicios.html#promociones">Promociones</a></li>
+    </ul>
+    <a class="nav-login" href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div>
+        <span class="eyebrow">PLAYMAX · CONTACTO</span>
+        <h1>HABLEMOS<br>DE DIVERSIÓN</h1>
+        <p>
+          ¿Tienes una pregunta sobre PlayMax, una celebración o una visita?
+          Déjanos tu mensaje.
+        </p>
+      </div>
+      <div class="page-hero-art" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-layout">
+      <aside class="contact-info">
+        <span class="eyebrow">INFORMACIÓN</span>
+        <h2>ENCUÉNTRANOS<br>EN PLAYMAX</h2>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <strong>Dirección</strong>
+            <span>Presidente Plaza, Nivel 4<br>Av. La Revolución y Calle Circunvalación, Colonia San Benito, San Salvador.</span>
+          </div>
+          <div class="contact-item">
+            <strong>Correo</strong>
+            <a href="mailto:info@playmax.sv">info@playmax.sv</a>
+          </div>
+          <div class="contact-item">
+            <strong>Teléfono</strong>
+            <a href="tel:+50374938013">+503 7493-8013</a>
+          </div>
+          <div class="contact-item">
+            <strong>Horarios</strong>
+            <span>Lunes a jueves: 1:00 P.M. — 9:00 P.M.</span>
+            <span>Viernes y sábado: 10:00 A.M. — 10:00 P.M.</span>
+            <span>Domingo: 10:00 A.M. — 9:00 P.M.</span>
+          </div>
+        </div>
+
+        <a class="btn btn-ghost" style="margin-top:30px" href="https://www.google.com/maps/search/?api=1&query=Presidente+Plaza+San+Salvador" target="_blank" rel="noopener">ABRIR MAPA</a>
+      </aside>
+
+      <section class="contact-form">
+        <span class="eyebrow">ESCRÍBENOS</span>
+        <h2 class="section-title">¿CÓMO PODEMOS <span>AYUDARTE?</span></h2>
+
+        <form id="contactForm" style="margin-top:30px">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group full">
+              <label for="subject">Asunto</label>
+              <input id="subject" name="subject" type="text" placeholder="¿Sobre qué quieres escribir?" required>
+            </div>
+            <div class="form-group full">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+            <div class="form-group full">
+              <button class="btn btn-primary" type="submit">ENVIAR MENSAJE</button>
+              <p class="form-message" id="formMessage" aria-live="polite"></p>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><span class="logo-main">play<span>max</span></span><small>DIVERSIÓN EXTREMA</small></a>
+      <p>El gran centro de entretenimiento de El Salvador.</p>
+    </div>
+    <div>
+      <h3>EXPLORA</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Atracciones</a></li>
+        <li><a href="servicios.html#cumpleanos">Cumpleaños</a></li>
+        <li><a href="servicios.html#promociones">Promociones</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>VISÍTANOS</h3>
+      <ul class="footer-links">
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Presidente+Plaza+San+Salvador" target="_blank" rel="noopener">Presidente Plaza, Nivel 4</a></li>
+        <li><span>San Benito, San Salvador</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>CONTACTO</h3>
+      <ul class="footer-links">
+        <li><a href="mailto:info@playmax.sv">info@playmax.sv</a></li>
+        <li><a href="tel:+50374938013">+503 7493-8013</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© 2025 PlayMax · Todos los derechos reservados.</span><span>Inversiones GOLE S.A. de C.V.</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

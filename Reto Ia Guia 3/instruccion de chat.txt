@@ -1,0 +1,65 @@
+Prompt utilizado
+Actúa como un Desarrollador Web Senior y Diseñador UI/UX experto. Tu objetivo es rediseñar y generar el código completo para la página de inicio (`index.html`) del sitio web de "PlayMax El Salvador".
+
+Basándote en la estructura y recursos gráficos existentes, debes seguir estrictamente las siguientes directrices:
+
+**A. Temática y Finalidad del Sitio**
+El sitio corresponde a "PlayMax El Salvador", un gran centro de entretenimiento indoor ubicado en Presidente Plaza. La finalidad de la página de inicio es captar la atención inmediatamente, transmitir una sensación de "Diversión Extrema" y guiar a los usuarios hacia la compra de tiempo de juego, paquetes de cumpleaños o la exploración de atracciones. El ambiente debe sentirse como un parque de diversiones moderno, tipo "Arcade de Neón" o "Cyberpunk familiar", lleno de energía y dinamismo.
+
+**B. Contenido que debe conservarse**
+Debes mantener intacta la arquitectura de la información y los textos clave de la página actual. Específicamente:
+
+* **Header/Navegación:** Logo de PlayMax, enlaces a Inicio, Atracciones, Cumpleaños, Promociones y Contacto.
+
+
+* **Hero Section:** El texto "EL SALVADOR · PRESIDENTE PLAZA", el titular "DIVERSIÓN EXTREMA", el párrafo descriptivo y los botones "DESCUBRE PLAYMAX" y "VER PRECIOS".
+
+
+* **Sección Sobre PlayMax:** Titular "NO HAY NADA MEJOR" y los párrafos que describen las instalaciones (trampolines, toboganes, cafetería).
+
+
+* **Sección de Experiencias:** El titular "TODO EN UN SOLO LUGAR" y la lista de atracciones (Trampoline Park, Zona Arcade, Carros Chocones, Circuito de Cuerdas, Muro de Escalar, Laser Tag, Soft Play).
+
+
+* **Sección de Flexibilidad y Cumpleaños:** Tarjetas de "PAGA POR TIEMPO" y "CELEBRA EN PLAYMAX".
+
+
+* **Sección de Ubicación:** Información de Presidente Plaza en San Benito.
+
+
+* **Footer:** Mantener todos los enlaces, horarios, correos (`info@playmax.sv`) y derechos de autor.
+
+
+
+**C. Identidad Visual (Estricto)**
+El diseño debe reflejar los colores y el estilo visual presentes en el material promocional y la hoja de estilos original.
+
+* **Fondo principal:** Tonos oscuros espaciales/nocturnos (`#1f0933` y `#170724`) para hacer resaltar los elementos luminosos.
+
+
+* **Colores de acento (Gradients y Neón):** Debes usar tonos vibrantes que imiten el logo y los afiches promocionales. Utiliza fucsia/magenta (`#e6007e`), púrpura oscuro (`#c2006a`), azul vívido (`#3852d8`) y toques de naranja o verde para elementos secundarios.
+
+
+* **Tipografía:** Obligatorio usar 'Nunito' (peso 800/900) para los titulares de gran impacto (Display) y 'Poppins' para los textos de cuerpo y lectura.
+
+
+* **Estética general:** Bordes redondeados (`16px` a `24px` en tarjetas), botones con efectos hover de elevación y fondos con sutiles gradientes radiales para simular luces de neón o reflejos de juegos arcade.
+
+
+
+**D. Uso Obligatorio de CSS Grid (Arquitectura Principal)**
+La distribución principal de la página (`<main>`) y la estructura macro de sus secciones deben estar construidas obligatoriamente utilizando **CSS Grid**.
+
+* No uses Grid solo para aislar componentes como la galería de atracciones. Utiliza áreas de Grid (`grid-template-areas`) o columnas fraccionales (`grid-template-columns`) para orquestar la disposición del Hero Section, la ubicación de los bloques de texto frente a las imágenes, y el flujo general de las secciones de la página.
+* Puedes utilizar **Flexbox** únicamente para alinear elementos menores dentro de los componentes específicos (por ejemplo, alinear los enlaces dentro del menú de navegación, o el ícono y texto dentro de un botón).
+
+**E. Generación y Entrega del Código**
+
+* Entrégame el código generado de forma separada:
+1. Un bloque de código con el contenido completo y semántico para el archivo `index.html`.
+2. Un bloque de código separado para el archivo `styles.css` que contenga todas las reglas de Grid, variables de color, tipografías y animaciones necesarias.
+
+
+
+
+* No omitas partes del código ni utilices comentarios como "/* resto del código aquí */". Necesito la versión final, completa, completamente responsiva y lista para funcionar.
